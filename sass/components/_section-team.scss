@@ -1,0 +1,90 @@
+ /* section team */
+  
+  
+ .section-team__subtitle {
+    display: flex;
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  
+  .section-team__item {
+    margin-right: 30px;
+    background: $white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  
+  .people-list {
+    padding-top: 30px;
+   
+  }
+  .section-team__people {
+    display: block;
+    max-width: 100%;
+  }
+  
+  .people-list__title{
+    color: $primery-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .people-list__text {
+    color: $title-text-color;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    margin: 0;
+  }
+  
+  /* social link */
+  
+  .social-box {
+    margin: 0;
+    display: flex;
+    margin-top: 16px;
+    padding: 0;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .social-box__link {
+    width: 44px;
+    height: 44px;
+    background-color: $white-color;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms $timing-function;
+  &:hover .social-box__icon,
+  &:focus .social-box__icon {
+      fill: $white-color;
+    }
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+ 
+ 
+ 
+  .social-box__icon {
+    fill: #afb1b8;
+    transition: fill 250ms $timing-function;
+  }

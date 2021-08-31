@@ -1,0 +1,66 @@
+/*************************
+   ********* company ********
+   *****************************/
+  
+   .section-company {
+    padding: 94px 0 94px 0;
+  }
+  
+  .section-company__text {
+    color: $primery-text-color;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-top: 0;
+      margin-bottom: 50px;
+  }
+  
+  .company-box {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  .company-box__list {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+  }
+  .company-box__link {
+    fill: #afb1b8;
+    padding: 16px 32px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border 250ms $timing-function;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover .company-box__icon,
+    &:focus .company-box__icon {
+      fill: $accent-color;
+    }
+    &:hover .company-box__icon,
+    &:focus .company-box__icon {
+      fill: $accent-color;
+    }
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+    }
+  }
+ 
+  .company-box__list:last-child {
+    margin-right: 0;
+  }
+  .company-box__icon {
+    fill: #afb1b8;
+    transition: fill 250ms $timing-function;
+  }
+ 

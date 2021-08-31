@@ -1,0 +1,49 @@
+/* PORTFOLIO DECORATION */
+.hidden { 
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+  
+  .section-pic {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .section-pic__list {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  
+  .section-pic__button {
+    background:   $background-team-color;
+    border: none;
+    color: $primery-text-color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    padding: 6px 22px;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background 250ms $timing-function,
+      color 250ms $timing-function, box-shadow 250ms $timing-function;
+      &:hover,
+      &:focus {
+        background-color: $accent-color;
+        color: $white-color;
+        box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+          0px 2px 2px rgb(0 0 0 / 12%);
+      }
+  }
+  
+
+  

@@ -1,0 +1,48 @@
+/* section box */
+                        
+  
+.section-box {
+    padding-top: 94px;
+    color: $title-text-color;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
+  }
+  
+  .section-box__hidden {
+    display: none;
+  }
+  
+  .section-box__attention {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .section-box__item {
+    margin-right: 30px;
+    width: 270px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+ 
+  .section-box__team {
+    background: $background-team-color;
+    border-radius: 4px;
+    padding: 25px 102px;
+  }
+  .section-box__icon {
+    fill: $primery-text-color;
+  }
+  .section-box__title {
+    color: $primery-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  
