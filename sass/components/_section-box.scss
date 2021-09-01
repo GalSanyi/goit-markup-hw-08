@@ -16,16 +16,44 @@
   }
   
   .section-box__attention {
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  .section-box__item {
-    margin-right: 30px;
+    // display: flex;
+    //   margin: 0;
+    //   padding: 0;
+    @media screen and (min-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+      
+    }
+
+    
+   }
+  
+   .section-box__item {
+     margin-bottom: 30px;
     width: 270px;
+     
+    @media screen and (min-width:768px) {
+      max-width: calc((100% - 4*15px)/2);
+       margin: 15px 15px 15px 15px;
+       width: 270px;
+      
+    }
+    @media screen and (min-width:1200px){
+      max-width: calc((100% - 8*15px)/4);
+      width: 270px;
+      
+    }
+   
+    
     &:last-child {
       margin-right: 0;
+      width: 270px;
     }
+  
+  }
+  .section-box__item {
+    width: 270px;
   }
   
  
@@ -33,6 +61,7 @@
     background: $background-team-color;
     border-radius: 4px;
     padding: 25px 102px;
+  
   }
   .section-box__icon {
     fill: $primery-text-color;

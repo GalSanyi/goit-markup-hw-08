@@ -1,5 +1,10 @@
  /* section content */
-  
+  .section-content{
+    @media screen and (max-width:1199px){
+      display: none;
+      
+    }
+  }
   
  .section-content {
     padding-top: 94px;

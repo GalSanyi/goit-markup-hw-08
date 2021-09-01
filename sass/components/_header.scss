@@ -1,83 +1,141 @@
 .header-box {
+  position: relative;
+  @media screen and (width: 768px) {
     display: flex;
     margin-left: auto;
   }
+}
+
+/* header */
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+.section-box {
+  padding-top: 94px;
+}
+.header {
+  margin: 0;
+}
+
+/* siete nav */
+
+.site-nav__logo {
+  color: $accent-color;
+  font-family: Raleway;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+.studio {
+  color: $primery-text-color;
+}
+
+.site-nav__text-size {
+  text-decoration: none;
+  color: $primery-text-color;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.site-nav {
   
-  /* header */
-  
-  .page-header {
-    border-bottom: 1px solid #ececec;
-  }
-  .section-box {
-    padding-top: 94px;
-  }
-  .header {
-    margin: 0;
-  }
-  
-  /* siete nav */
-  
-  .site-nav__logo {
-    color: $accent-color ;
-    font-family: Raleway;
-  
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-  }
-  .studio {
-    color: $primery-text-color;
-  }
-  
-  .site-nav__text-size {
-    text-decoration: none;
-    color: $primery-text-color ;
-    font-family: Raleway;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-  }
-  .site-nav {
+  @media screen and (width: 768px) {
     display: flex;
     align-items: center;
   }
-  .site-nav a {
-    display: block;
-    padding-bottom: 24px;
-    padding-top: 24px;
-  
-    color: $primery-text-color;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    transition: color 250ms $timing-function;
-  }
-  
-  /* menu */
-  .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 93px;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.menu__item {
-    margin-right: 50px;
-}
-.menu__item:last-child{
-    margin-right: 0;
 }
 
-  .menu__link--activ {
-    position: relative;
-    display: block;
-  
+.menu-toggle {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: $white-color;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: $accent-color;
+}
+
+
+
+.site-nav a {
+  display: block;
+  padding-bottom: 24px;
+  padding-top: 24px;
+
+  color: $primery-text-color;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  transition: color 250ms $timing-function;
+}
+
+/* menu */
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 93px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.menu__item {
+  margin-right: 50px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__link--activ {
+  position: relative;
+  display: block;
+
   &::after {
     content: "";
     position: absolute;
@@ -89,83 +147,75 @@
     background-color: tomato;
     border-radius: 2px;
     background: $accent-color;
-  
+
     transition: opacity 250ms $timing-function;
   }
+}
+.menu__link:hover::after,
+.menu__link:focus::after {
+  opacity: 1;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  color: $accent-color;
+}
+
+/* list link */
+
+.list-link {
+  display: flex;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  & a {
+    color: $title-text-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
   }
-  .menu__link:hover::after,
-  .menu__link:focus::after {
-    opacity: 1;
-  }
-  
-  .menu__link:hover,
-  .menu__link:focus {
+}
+.list-link__item {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.list-link__button:hover svg,
+.list-link__button:focus svg {
+  fill: $accent-color;
+}
+
+.list-link__contact {
+  margin-right: 10px;
+  fill: $title-text-color;
+  transition: fill 250ms $timing-function;
+}
+
+.list-linc__icon {
+  margin-right: 10px;
+  fill: $title-text-color;
+  transition: fill 250ms $timing-function;
+}
+
+.list-link__button {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
     color: $accent-color;
-    
   }
-  
-  /* list link */
-  
-  .list-link {
-    display: flex;
-    margin-left: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-    margin-left: auto;
-    padding: 0;
-    & a {
-      color: $title-text-color;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.02em;
-    }
-  }
-  .list-link__item {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-  }
-  
-  
- 
-  .list-link__button:hover svg,
-  .list-link__button:focus svg {
+  &:hover .list-link__contact {
     fill: $accent-color;
   }
-  
-  .list-link__contact {
-    margin-right: 10px;
-    fill: $title-text-color;
-    transition: fill 250ms $timing-function;
+  &:hover .list-linc__icon {
+    fill: $accent-color;
   }
-  
-  .list-linc__icon {
-    margin-right: 10px;
-    fill: $title-text-color;
-    transition: fill 250ms $timing-function;
-  }
-  
- 
- 
-  
-  .list-link__button {
-    margin-left: 50px;
-    display: flex;
-    align-items: center;
-    transition: color 250ms $timing-function;
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
-    &:hover .list-link__contact {
-      fill: $accent-color;
-    }
-    &:hover .list-linc__icon {
-      fill: $accent-color;
-    }
-  }
-  
- 
+}

@@ -18,11 +18,20 @@
       margin-bottom: 50px;
   }
   
-  .company-box {
-    padding: 0;
-    margin: 0;
-    display: flex;
+  
+   
+    @media screen and (min-width:480px) {
+      .company-box {
+        padding: 0;
+        margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    
+     
   }
+    }
+   
+
   .company-box__list {
     width: 170px;
     height: 92px;
@@ -30,6 +39,23 @@
     align-items: center;
     justify-content: center;
     margin-right: 30px;
+
+    @media screen and (min-width:480px) {
+      max-width: calc((100% - 4*15px)/2);
+      margin-bottom: 30px;
+      
+      
+    }
+
+    @media screen and (min-width:768px) {
+      max-width: calc((100% - 4*15px)/2);
+      
+      
+    }
+    @media screen and (min-width:1200px){
+      max-width: calc((100% - 8*15px)/4);
+      
+    }
   }
   .company-box__link {
     fill: #afb1b8;
@@ -63,4 +89,3 @@
     fill: #afb1b8;
     transition: fill 250ms $timing-function;
   }
- 

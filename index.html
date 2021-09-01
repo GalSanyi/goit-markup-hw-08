@@ -20,10 +20,33 @@
   </head>
 
   <body>
+ 
     <header class="page-header">
       <div class="container header-box">
         <nav class="site-nav">
           <a href="#" class=" site-nav__text "><span class="site-nav__logo">Web</span><span class="site-nav__text-size">Studio</span></a>
+          
+            <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+         
+            <svg width="40" height="40" aria aria-label="переключатель мобильного меню"> 
+            
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+              
+            </svg>
+          </button>
+          <div class="menu-container js-menu-container" id="mobile-menu" >
+            <button class="menu-toggle js-close-menu">
+             <svg width="40" height="40">
+              <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
+            </button>
+             </svg>
+            <a href="">Студия</a>
+            <a href="">Портфолио</a>
+            <a href="">Контакты</a>
+          </div>
           <ul class="menu">
             <li class="menu__item">
               <a
@@ -41,6 +64,7 @@
               <a class="menu__link" href="#">Контакты</a>
             </li>
           </ul>
+         
         </nav>
 
 
@@ -126,9 +150,9 @@
               </p>
             </li>
 
-            <li class=section-box__item">
+            <li class="section-box__item">
               <div class="section-box__team">
-                <svg class="section-box__icon" width="55" height="61">
+                <svg class="section-box__icon" width="70" height="54">
                   <use href="./images/symbol-defs2.svg#icon-Vector5"></use>
                 </svg>
               </div>
@@ -138,9 +162,13 @@
                 плановых заданий.
               </p>
             </li>
+
+           
           </ul>
         </div>
       </section>
+
+     
 
       <section class="section-content">
         <div class="container">
@@ -183,7 +211,7 @@
             <li class="section-team__item">
               <img
                 class="section-team__people"
-                src="./images/img.jpg"
+                src="./images/hw1.jpg"
                 alt="people"
                 width="270"
               />
@@ -240,7 +268,7 @@
             <li class="section-team__item">
               <img
                 class="people"
-                src="./images/img2.jpg"
+                src="./images/hw2.jpg"
                 alt="people"
                 width="270"
               />
@@ -297,7 +325,7 @@
             <li class="section-team__item">
               <img
                 class="people"
-                src="./images/img3.jpg"
+                src="./images/hw3.jpg"
                 alt="people"
                 width="270"
               />
@@ -353,7 +381,7 @@
             <li class="section-team__item">
               <img
                 class="people"
-                src="./images/img4.jpg"
+                src="./images/hw4.jpg"
                 alt="people"
                 width="270"
               />
@@ -605,6 +633,7 @@
       </div>
      
     </div>
+    <Script src="./js/menu.js"></Script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

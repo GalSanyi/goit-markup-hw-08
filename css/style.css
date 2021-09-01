@@ -71,6 +71,19 @@ li {
   display: flex;
   align-items: center;
 }
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border:none;
+  background-color:transparent;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+
+
 .site-nav a {
   display: block;
   padding-bottom: 24px;
