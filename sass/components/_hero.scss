@@ -3,7 +3,7 @@
   ****************************************/
   
   .container-box {
-    max-width: 1600px;
+   
     height: 600px;
     background: #2f303a;
     text-align: center;
@@ -19,44 +19,35 @@
     background-color: #000000;
   }
 
- 
-  @media (min-device-pixel-ratio: 2) and (min-width:480px),
-  (min-resolution: 192dpi) and (min-width:480px),
-  (min-resolution: 2dppx) and (min-width:480px) {
-  .container-box {
-    background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url('../images/hero-mobile.jpg');
+  @media screen and (min-width:768px){
+    .container-box{
+      max-width: 768px;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-tablet.jpg);
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-tablet.jpg);
+      }
+    }
   }
-}
+
+  @media screen and (min-width:1200px){
+    .container-box{
+      max-width: 1200px;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero.jpg);
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero.jpg);
+      }
+    }
+  }
 
 
-@media (min-device-pixel-ratio: 2) and (min-width:768px),
-(min-resolution: 192dpi) and (min-width:768px),
-(min-resolution: 2dppx) and (min-width:768px) {
-.container-box {
-  background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ), url('../images/hero-tablet.jpg');
-}
-}
-
-
-@media (min-device-pixel-ratio: 2) and (min-width:1200px),
-(min-resolution: 192dpi) and (min-width:1200px),
-(min-resolution: 2dppx) and (min-width:1200px) {
-.container-box {
-  background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ), url('../images/hero-desctop.jpg');
-}
-}
 
 
   .container-box__title {

@@ -417,6 +417,8 @@ img {
   padding-left: 0;
   margin: 0;
   margin-bottom: 50px;
+  margin-top: -15px;
+  margin-left: -15px;
 }
 @media screen and (min-width: 480px) {
   .section-pic__list {
@@ -435,10 +437,9 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .section-pic__item {
-    margin-bottom: 15px;
-  }
+.section-pic__item {
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 .section-pic__button {
@@ -638,6 +639,10 @@ img {
   .footer-content {
     margin-right: 70px;
   }
+}
+
+.footer-content__adress {
+  font-style: normal;
 }
 
 .footer-content__logo {
