@@ -15,7 +15,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero.jpg);
+      url(../images/hero-mobile.jpg);
     background-color: #000000;
   }
 
@@ -33,9 +33,9 @@
     }
   }
 
-  @media screen and (min-width:1200px){
+  @media screen and (min-width:1600px){
     .container-box{
-      max-width: 1200px;
+      max-width: 1600px;
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero.jpg);
       @media (min-device-pixel-ratio: 2),
